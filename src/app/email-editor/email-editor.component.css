@@ -1,0 +1,103 @@
+.email-editor {
+    position: fixed;
+    left: 60px;
+}
+
+.form-title {
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #0176cf;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+
+.email-headers {
+    position: fixed;
+    top: 60px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.cc-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-body {
+    position: fixed;
+    top: 300px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 6px 0;
+    background-color: #f3f3f3;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+
+input[type=text]:focus {
+    border: 2px solid #0176cf;
+}
+
+textarea{
+    width: 100%;
+    height: 400px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    background-color: #f3f3f3;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    resize: none;
+}
+
+textarea:focus {
+    border: 2px solid #0176cf;
+}
+
+.footer-buttons {
+    position: fixed;
+    left: 78px;
+    top: 780px;
+    display: inline-block;
+}
+
+.btn-email-editor {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e2e1e1;
+    border: 1px solid #bebebe;
+    color: black;
+    border-radius: 4px;
+    padding: 6px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-email-editor:hover {
+    background-color: #0176cf;
+    color: white;
+    cursor: initial;
+}

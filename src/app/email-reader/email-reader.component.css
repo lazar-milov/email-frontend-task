@@ -1,0 +1,93 @@
+.email-reader-container {
+    position: fixed;
+    left: 362px;
+    top: 0px;
+    width: 81%;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+.email-reader-title {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #0176cf;
+    border-bottom: 1px solid black;
+    color: white;
+}
+
+.email-reader-headers-container {
+    position: relative;
+    background-color: #f3f3f3;
+    top: 0px;
+    width: 100%;
+    height: 20%;
+}
+
+.email-reader-header-label {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 8px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-right: 1px solid black;
+    width: 50px;
+    text-align: right;
+}
+
+.email-reader-header-item {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.email-reader-tools-container {
+    position: relative;
+    background-color: #f3f3f3;
+    top: 0px;
+    width: 100%;
+    height: 5%;
+    border-top: 1px solid #0176cf;
+    border-bottom: 1px solid #0176cf;
+}
+
+.email-reader-tools-label {
+    position: relative;
+    display: inline;
+    top: 15px;
+    left: 10px;
+    padding-left: 4px;
+    padding-right: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.email-reader-tool {
+    position: relative;
+    display: inline;
+    top: 15px;
+    left: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: ease-in-out 0.2s;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+
+.email-reader-tool:hover {
+    background-color: #0176cf;
+    color: white;
+}
+
+.email-reader-body {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}

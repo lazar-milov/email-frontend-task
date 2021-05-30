@@ -1,0 +1,21 @@
+<div @showTrigger *ngIf="showMailList" class="email-list-container">
+    <div class="email-list-title">{{title}}</div>
+    <ul>
+        <li *ngFor="let email of mails" (click)="selectEmail(email)">
+            <div *ngIf="email.isRead; else notRead">
+                <div class="mail-container" [class.selected]="email.id == mailId">
+                    <div class="sender">{{email.sender}}</div>
+                    <div class="subject">{{email.subject}}</div>
+                    <div class="received">{{email.sentOn}}</div>
+                </div>
+            </div>
+            <ng-template #notRead>
+                <div class="mail-container" [class.selected]="email.id == mailId">
+                    <div class="sender"><b>{{email.sender}}</b></div>
+                    <div class="subject"><b>{{email.subject}}</b></div>
+                    <div class="received"><b>{{email.sentOn}}</b></div>
+                </div>
+            </ng-template>
+        </li>
+    </ul>
+</div>

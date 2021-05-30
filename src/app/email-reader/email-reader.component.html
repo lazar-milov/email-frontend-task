@@ -1,0 +1,44 @@
+<div *ngIf="mailToRead" class="email-reader-container">
+    <div class="email-reader-title">
+        Received email
+    </div>
+    <div class="email-reader-headers-container">
+        <div class="email-reader-header-label">
+            From
+        </div>
+        <div class="email-reader-header-item">
+            {{mailToRead.sender}}
+        </div><br>
+        <div class="email-reader-header-label">
+            To
+        </div>
+        <div class="email-reader-header-item">
+            {{mailToRead.recipient}}
+        </div><br>
+        <div class="email-reader-header-label">
+            Subject
+        </div>
+        <div class="email-reader-header-item">
+            {{mailToRead.subject}}
+        </div><br>
+        <div class="email-reader-header-label">
+            Sent on
+        </div>
+        <div class="email-reader-header-item">
+            {{mailToRead.sentOn}}
+        </div><br>
+    </div>
+    <div class="email-reader-tools-container">
+        <div class="email-reader-tools-label">Actions:</div>
+        <div class="email-reader-tool">Reply</div>
+        <div class="email-reader-tool">Delete</div>
+        <!-- Must add isDeleted property for Email object and dipsplay only if true -->
+        <div *ngIf="!mailToRead.isRead" class="email-reader-tool" (click)="markAsRead()"
+            style="border-right: 1px solid black;">Mark as read</div>
+        <div *ngIf="mailToRead.isRead" class="email-reader-tool" (click)="markAsUndread()"
+            style="border-right: 1px solid black;">Mark as unread</div>
+    </div>
+    <div class="email-reader-body-container">
+        <div class="email-reader-body">{{mailToRead.body}}</div>
+    </div>
+</div>

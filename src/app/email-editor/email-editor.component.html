@@ -1,0 +1,25 @@
+<div *ngIf="newMail" class="email-editor">
+    <form>
+        <div class="form-title">New email:</div>
+        <div class="email-headers">
+            <p>Recipients & subject:</p>
+            <input id="recipient" type="text" name="recipient" placeholder="Send to"><br>
+            <div *ngIf="!showCC">
+                <button class="btn-email-editor" (click)="showCCField()">Add people to CC</button><br>
+            </div>
+            <div *ngIf="showCC" class="cc-container">
+                <input id="recipient-cc" type="text" name="recipient-cc" placeholder="CC">
+                <br>
+            </div>
+            <input id="subject" type="text" name="subject" placeholder="Subject"><br>
+        </div>
+        <div class="email-body">
+            <p>Email body</p>
+            <textarea id="message-body" type="textarea" name="message-body" placeholder="Email body..."></textarea><br>
+        </div>
+        <div class="footer-buttons">
+            <button id="btn-send" class="btn-email-editor">Send</button>
+            <button id="btn-save-draft" class="btn-email-editor">Save draft</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+<div id="sidebar" class="sidebar">
+    <ul>
+        <li>MyMail</li>
+        <li>
+            <div class="pictureContainer">
+                <img [class.selected]="newSelected" (click)="selectNewMail()" src="../../assets/new-mail.png">
+            </div>
+        </li>
+        <li>
+            <div class="pictureContainer">
+                <img [class.selected]="inboxSelected" (click)="selectInbox()" src="../../assets/inbox.png">
+            </div>
+        </li>
+        <li>
+            <div class="pictureContainer">
+                <img [class.selected]="sentSelected" (click)="selectSent()" src="../../assets/sent.png">
+            </div>
+        </li>
+        <li>
+            <div class="pictureContainer">
+                <img [class.selected]="binSelected" (click)="selectBin()" src="../../assets/trash.png">
+            </div>
+        </li>
+    </ul>
+</div>
